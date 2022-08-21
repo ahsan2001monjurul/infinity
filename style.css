@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: ; */
+}
+:root{
+    --color1: #FFFFFF;
+    --color2: #232C3B;
+    --color3: #FF6C3A;
+    --color4: #4AD5C0;
+    --color5: #596269;
+    --color6: #2f3542;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 100%;
+    width: 1024px;
+    margin: 0px auto;
+ 
+}
+
+/* -----tip bar------ */
+
+.tip{
+    width: 100%;
+    background-color: var(--color2);
+    padding: 12px 0px;
+    
+}
+.tipflex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color1);
+}
+.tip-social{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tip-social button{
+    transition: 300ms;
+}
+.tip-social :hover{
+    background-color: var(--color3);
+}
+.tipicon{
+    color: var(--color1);
+    background-color: var(--color5);
+    padding: 8px 9px;
+    border: none;
+    border-radius: 100px;
+    font-size: .7em;
+}
+.one{
+    margin-right: 2.5px;
+    padding: 8px 11px;
+}
+.two{
+    margin-right: 2.5px;
+}
+.support{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 5px;
+    font-size: 0.78em;
+    font-weight: 400;
+    letter-spacing: .8px;
+}
+.adicon{
+    font-size: 1.25em;
+    color: var(--color5);
+}
+/*------------- main head----------- */
+.nav{
+    width: 100%;
+    margin: 30px 0px;
+    color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menubar{
+    display: flex;
+}
+.menubar a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--color6);
+    font-size: .90em;
+    font-weight: 300;
+    letter-spacing: 1px;  
+}
+.but{
+    padding: 7px 15px; 
+    background-color: var(--color1);
+    transition: all 120ms;
+}
+.menubar :hover{
+    color: var(--color1);
+    background-color: var(--color2) ;
+    font-weight: 300;
+}
+.active {
+    color: var(--color1);
+    padding: 7px 15px;
+    background-color: var(--color2) !important;
+}
+
+/* ---------bgpart----- */
+.bg-container{
+    background-image: url(./img/bg1.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------media-------------- */
+
+@media screen and (max-width: 720px) and (min-width: 576px) {
+    .tipflex{
+        width: 90%;
+        margin: 0px auto;
+        display: block;
+    }
+    .tipicon{
+        font-size: .5em;
+    }
+    .support{
+        width:90%;
+        margin: 0px auto;
+    }
+    .tip-social{
+        width: 10%;
+       margin: 0px auto;
+    }
+}
+
+@media screen and (max-width: 1020px) and (min-width: 721px) {
+    .support{
+        width:60%;
+        margin: 0px auto;
+    }
+    .tip-social{
+       margin: 0px auto;
+    }
+}
